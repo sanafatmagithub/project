@@ -1,0 +1,116 @@
+/* .navbar{
+
+   background-color: pink;
+   display: flex;
+   justify-content:space-evenly ;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+    display: inline;
+    background-color: aqua;
+}
+.outer{
+    height: 400px;
+    width: 400px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color: darkorchid;
+    align-self: flex-start
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color:chocolate;
+}
+@media(max-width:300px){
+    div{
+        background-color:green;
+    }
+}
+@media(min-width:300px) and (max-width:400px){
+    div{
+        background-color:pink;
+    }
+}
+@media(min-width:400px) and (max-width:600px){
+    div{
+        background-color:red;
+    }
+}
+@media(min-width:600px){
+    div{
+        background-color:blue;
+    }
+}
+div{
+
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 4px solid black;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s; 
+    transition: all 2s ease-in 1s;
+     position: absolute;
+     border-radius: 50%; 
+     top:100px;
+    left: 100px;   
+    transform:rotate(360deg);
+    rotate: x 180deg; 
+    animation-name: colorAnimate;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation: colorAnimate 2s ease-in 1s infinite;
+    
+}
+div:hover{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    transform: rotate(180deg);
+    transform: translate(100px,80px);
+    transform: skew(45deg);
+   
+}
+ @keyframes colorAnimate{
+
+   from{ left:0px;
+    background-color:aquamarine
+   }
+   to{ left:200px;
+    background-color: red;
+    color: white;
+  }
+} 
+  */
+
+  div{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 20px solid yellow;
+    border-top: 20px solid aqua;
+    animation: spinAnimate 1s ease-in-out 0s infinite;
+  }
+@keyframes spinAnimate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
